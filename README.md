@@ -40,3 +40,7 @@ Steps (requires valid AWS environment credentials):
 | 1759429946752 | REPORT RequestId: 0ba1aa21-a5d7-4fd2-b11e-b3e82dadf0d0 Duration: 332.82 ms Billed Duration: 333 ms Memory Size: 128 MB Max Memory Used: 51 MB                            |
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ```
+
+**Alarm screenshot** (from various runtime errors)
+<img width="894" height="483" alt="Screenshot 2025-10-02 at 1 35 54 PM" src="https://github.com/user-attachments/assets/f7cb33a5-de01-438f-96bd-8140eabb3cf2" />
+
