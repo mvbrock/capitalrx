@@ -1,17 +1,20 @@
 # CapitalRX assignment
 
-The main.tf file has been completed, and provides a public accessible URL to view the pricing
+The `main.tf` file has been completed, and provides a public accessible URL to view the pricing
 results. One issue I noticed is that the worldtimeapi.org API is down, i.e. I get a
 "connection reset by peer" error whether I call from my laptop or from the Lambda function.
 I modified the pricing.py code slightly to catch the resulting exception and just return
 that the time is invalid.
 
-Setup instructions (requires valid AWS environment credentials):
+## Setup instructions
+Steps (requires valid AWS environment credentials):
 * Prepare the Python code: `zip pricing.zip pricing.py`
 * Run Terraform: `terraform plan && terraform apply`
 
-Function URL: https://kqyq3eytvnfdq35wvyvnkcfv4e0uujww.lambda-url.us-west-1.on.aws/
-Log sample (includes an initial error where the SEED was not set in the environment):
+## Results
+**Function URL**: https://kqyq3eytvnfdq35wvyvnkcfv4e0uujww.lambda-url.us-west-1.on.aws/
+
+**Log sample** (includes an earlier error where the SEED was not set in the environment):
 ```
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 |   timestamp   |                                                                                                                                                                                                                                                                                                                                                                                              message                                                                                                                                                                                                                                                                                                                                                                                              |
